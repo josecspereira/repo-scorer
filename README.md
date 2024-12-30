@@ -33,3 +33,15 @@ The criteria used for the algorithm will be as follows:
   to correctly set expectation (specially on a TDD approach);
 * A lot of rounding is happening due to every commit calculation being added,
   this also means there's a fair amount of errors that propagate.
+
+### Top 10 repositories per algorithm result
+1. repo250 - Score: 22500, Unique Contributors: 54
+2. repo518 - Score: 18695, Unique Contributors: 28
+3. repo126 - Score: 13944, Unique Contributors: 20
+4. repo795 - Score: 10203, Unique Contributors: 18
+5. repo127 - Score: 8913, Unique Contributors: 11
+6. repo476 - Score: 8652, Unique Contributors: 9
+7. repo982 - Score: 6309, Unique Contributors: 30
+8. repo740 - Score: 5813, Unique Contributors: 8
+9. repo742 - Score: 5324, Unique Contributors: 5
+10. repo703 - Score: 4591, Unique Contributors: 4
