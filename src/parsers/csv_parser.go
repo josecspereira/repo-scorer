@@ -7,6 +7,7 @@ import (
 	"strconv"
 )
 
+// ParseCSV Parses the CSV of a given reader with the format timestamp,username,repository,files,additions,deletions.
 func ParseCSV(reader io.Reader) ([]models.Commit, error) {
 	csvReader := csv.NewReader(reader)
 	rows, err := csvReader.ReadAll()

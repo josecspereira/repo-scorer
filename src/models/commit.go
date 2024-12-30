@@ -9,6 +9,7 @@ type Commit struct {
 	Deletions int
 }
 
+// RepositoryScore Structure that holds the score and UNIQUE contributors for a given repo.
 type RepositoryScore struct {
 	Repo         string
 	Score        float64
