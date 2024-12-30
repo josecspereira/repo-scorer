@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	file, err := os.Open("commits.csv")
-	if err != nil {
-		fmt.Println("Error opening file:", err)
+	file, errOpenFile := os.Open("commits.csv")
+	if errOpenFile != nil {
+		fmt.Println("Error opening file:", errOpenFile)
 		return
 	}
 	defer func(file *os.File) {
@@ -22,9 +22,9 @@ func main() {
 		}
 	}(file)
 
-	commits, err := parsers.ParseCSV(file)
-	if err != nil {
-		fmt.Println("Error reading CSV:", err)
+	commits, errParseCSV := parsers.ParseCSV(file)
+	if errParseCSV != nil {
+		fmt.Println("Error reading CSV:", errParseCSV)
 		return
 	}
 	repoScores := scorer.CalculateScores(commits)
